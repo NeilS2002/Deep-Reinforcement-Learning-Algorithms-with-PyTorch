@@ -1,7 +1,7 @@
 import os
 import sys
 from os.path import dirname, abspath
-sys.path.append(dirname(dirname(abspath(__file__))))
+sys.path.append(dirname(dirname(abspath()))
 
 import gym
 
