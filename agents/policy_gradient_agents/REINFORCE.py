@@ -93,6 +93,6 @@ class REINFORCE(Base_Agent):
         """Tells us whether it is time for the algorithm to learn. With REINFORCE we only learn at the end of every
         episode so this just returns whether the episode is over"""
         return self.done
-     def locally_save_policy():
+     def locally_save_policy(self):
         torch.save(self.policy.state_dict(), "Models/{}_local_network.pt".format(self.agent_name))
         

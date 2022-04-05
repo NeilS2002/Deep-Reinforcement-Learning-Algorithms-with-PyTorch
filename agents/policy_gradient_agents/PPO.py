@@ -127,6 +127,6 @@ class PPO(Base_Agent):
             self.rolling_results.append(np.mean(self.game_full_episode_scores[-1 * self.rolling_score_window:]))
         self.save_max_result_seen()
         
-    def locally_save_policy():
+    def locally_save_policy(self):
         torch.save(self.policy_new.state_dict(), "Models/{}_local_network.pt".format(self.agent_name))
         
